@@ -1,0 +1,11 @@
+config:
+  target: "http://127.0.0.1:3000"
+  phases:
+    - duration: 10
+      arrivalRate: 1000
+      count: 10000
+scenarios:
+  - flow:
+      - get:
+          url: "/users"
+      
